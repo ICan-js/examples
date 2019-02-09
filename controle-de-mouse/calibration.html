@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Controle de mouse - Calibração</title>
+
+    <link href="static/css/nes.min.css" rel="stylesheet">
+    <link href="static/css/progress.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div>
+        <progress id="progress-bar" class="nes-progress is-success progress-bar"></progress>
+    </div>
+
+    <div id="container">
+        <video autoplay="true" id="videoElementICJS">    
+        </video>
+    </div>
+
+    <script src="static/js/icjs.js"></script>
+    <script src="src/calibration.js"></script>
 </body>
 </html>

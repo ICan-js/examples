@@ -131,17 +131,6 @@ div.containers > .nes-container {
     margin-top: 20px;
 }
 
-.copied {
-    position: absolute;
-    right: 35px;
-    bottom: 25px;
-    z-index: 2;
-    display: none;
-    padding: 10px;
-    font-size: 0.7em;
-    color: #000;
-}
-
 .balloon .copied {
     right: 10px;
     bottom: -4px;
