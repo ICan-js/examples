@@ -7,6 +7,10 @@ let mousePositionA = null; // Atual
 let mousePositionB = null; // Anterior
 
 function setup() {
+    // Removendo canvas extra
+    let canvasZero = document.getElementById("defaultCanvas0");
+    canvasZero.parentNode.removeChild(canvasZero);
+
     createCanvas(windowWidth, windowHeight);
 
     const regressionWeights = sessionStorage.getItem("regressionModelICJS");
