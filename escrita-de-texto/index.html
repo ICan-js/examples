@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Escrita de texto - ICan.js</title>
+
+    <link href="static/css/sakura.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <h2>Escrita de texto com gestos de Libras</h2>
+    <p>
+        Este é um exemplo que utiliza a biblioteca ICan.js para a permitir a tradução de gestos de Libras em textos na página.
+    </p>
+    <p>
+        Sobre o ICan.js, esta foi uma biblioteca desenvolvida durante o trabalho de graduação (TG) do Felipe Menino, sendo utilizada como protótipo em seu trabalho, este que busca adicionar mais acessibilidade em páginas da web através de Deep Learning. O TG foi finalizado e a biblioteca está disponível para todos utilizarem ou mesmo colaborar =D. 
+    </p>
+
+    <h3>O exemplo</h3>
+    <p>
+        Este exemplo básicamente capta os gestos do usuário, classifica e então transforma em texto.
+    </p>
+
+    <h8>Forma de concatenação do texto</h8>
+    <select id="select-opt">
+        <option>Exclusiva</option>
+        <option>Continua</option>
+    </select>
+
+    <table style="width: 100%;">
+        <colgroup>
+            <col width="50%">
+            <col width="50%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th align="left">Sua imagem</th>
+                <th align="left">Seu texto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div id="container">
+                            <video autoplay="true" id="videoElementICJS">    
+                            </video>
+                    </div>
+                </td>
+                <td><textarea cols="30" id="textarea" placeholder="Seus gestos serão traduzidos aqui" rows="8"></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="static/js/icjs.js"></script>
+    <script src="static/js/index.js"></script>
+</body>
+</html>
