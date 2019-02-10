@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Controle de mouse - Calibração</title>
+    <title>Controle do mouse - Desenho (Exemplo)</title>
 
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-
+    
     <link href="static/css/nes.min.css" rel="stylesheet">
-    <link href="static/css/progress.css" rel="stylesheet">
+    
 </head>
 <body>
-    <div>
-        <progress id="progress-bar" class="nes-progress is-success progress-bar"></progress>
-    </div>
-
+    
     <!-- Elemento necessário para a classificação com Posenet -->
     <div id="container">
-        <video autoplay="true" id="videoElementICJS">    
-        </video>
+            <video autoplay="true" id="videoElementICJS">    
+            </video>
     </div>
-
+        
     <script src="static/js/sweetalert2@8.js"></script>
+    <script src="static/js/verify.js"></script>
+
+    <script src="static/js/p5.min.js"></script>
+    <script src="static/js/p5.dom.min.js"></script>
     <script src="static/js/icjs.js"></script>
-    <script src="static/js/calibration.js"></script>
+    <script src="static/js/draw.js"></script>
 </body>
 </html>

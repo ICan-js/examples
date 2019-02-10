@@ -137,32 +137,32 @@ div.containers > .nes-container {
 }
 
 @media screen and (max-width: 1280px) {
-.code p:first-child {
-    width: 99%;
-    padding-top: 2.7em;
-}
+    .code p:first-child {
+        width: 99%;
+        padding-top: 2.7em;
+    }
 }
 
 @media screen and (max-width: 768px) {
-body {
-    padding: 0;
-    margin: 2rem 0.2rem;
-}
-.balloon.nes-container .nes-balloon {
-    max-width: 70%;
-}
+    body {
+        padding: 0;
+        margin: 2rem 0.2rem;
+    }
+    .balloon.nes-container .nes-balloon {
+        max-width: 70%;
+    }
 
-.github-link {
-    display: none;
-}
+    .github-link {
+        display: none;
+    }
 
-.code p {
-    width: 100%;
-    font-size: 0.8em;
-}
+    .code p {
+        width: 100%;
+        font-size: 0.8em;
+    }
 
-#code-avatars p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+    #code-avatars p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

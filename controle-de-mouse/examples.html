@@ -10,6 +10,8 @@
 
     <link href="static/css/nes.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/buttons.css" rel="stylesheet">
+    <link href="static/css/reset.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,6 +21,23 @@
     <section class="nes-container with-title">
         <h2 class="title">Seleção de exemplos</h2>
 
+        <par>
+            Abaixo há os exemplos disponíveis para a utilização do controle de mouse através de movimentos com a cabeça. 
+        </par>
+
+        <div style="width: 100%">
+            <div class="center-button">
+                <a href="calibration.html" type="button" class="nes-btn is-primary link-button centoro">Desenhar!</a>
+                <a href="draw.html" type="button" class="nes-btn is-primary link-button centoro">Ler um texto</a>
+            </div>
+        </div>
     </section>
+
+    <script src="static/js/sweetalert2@8.js"></script>
+    <script src="static/js/verify.js"></script>
+    <script>
+        // Chama o script de verificação de pesos
+        verifyRegressionWeights();
+    </script>
 </body>
 </html>

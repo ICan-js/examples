@@ -22,6 +22,9 @@ Swal.fire({
     
     const finishFunction = (model) => {
         // Salvando o modelo treinado na memória
+        // Neste caso isto foi feito para que as outras páginas possam utilizar estes pesos
+        // OBS: o método exportRegressionWeights foi utilizado para simplificar o modelo gravado na memória
+        // já que este contém apenas os valores utilizados no modelo de regressão
         sessionStorage.setItem("regressionModelICJS", JSON.stringify(model.exportRegressionWeights()));
 
         Swal.fire({
@@ -47,6 +50,7 @@ Swal.fire({
         progressBar.value = (calibrationOptions.pointsToStorage) * (pointsInStore / 10);
     };
     
+    // Cria o modelo de regressão e inicia o processo de calibração do mesmo
     const regressionModel = new icjs.core.LinearRegression();
     icjs.common.calibrate(regressionModel, finishFunction, updateFunction, calibrationOptions);
 })();
