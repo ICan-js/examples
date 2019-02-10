@@ -28,9 +28,10 @@ Swal.fire({
         sessionStorage.setItem("regressionModelICJS", JSON.stringify(model.exportRegressionWeights()));
 
         Swal.fire({
-            title: "Finalizado!",
             text: "A calibração foi finalizada com sucesso!",
-            type: 'success',
+            imageUrl: 'static/assets/mushroom_green.gif',
+            imageHeight: 200,
+            imageAlt: 'Imagem feliz =)',
             showCancelButton: true,
             confirmButtonColor: '#0089F1',
             cancelButtonColor: '#DF0128',
