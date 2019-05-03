@@ -12,15 +12,20 @@
 <body>
     <h2>Escrita de texto com gestos de Libras</h2>
     <p>
-        Este é um exemplo que utiliza a biblioteca ICan.js para a permitir a tradução de gestos de Libras em textos na página.
+        Este é um exemplo que utiliza a biblioteca ICan.js para permitir a tradução de gestos de Libras em textos em campos de páginas web.
     </p>
     <p>
-        Sobre o ICan.js, esta foi uma biblioteca desenvolvida durante o trabalho de graduação (TG) do Felipe Menino, sendo utilizada como protótipo em seu trabalho, este que busca adicionar mais acessibilidade em páginas da web através de Deep Learning. O TG foi finalizado e a biblioteca está disponível para todos utilizarem ou mesmo colaborar =D. 
+        O ICan.js é uma biblioteca criada como protótipo do Trabalho de Graduação do aluno Felipe Menino orientado pelo Professor Me. Giuliano Araujo Bertoti, esta busca adicionar mais acessibilidade em páginas web através da aplicação de aprendizado profundo. 
     </p>
 
     <h3>O exemplo</h3>
     <p>
-        Este exemplo básicamente capta os gestos do usuário, classifica e então transforma em texto.
+        Este exemplo básicamente capta os gestos do usuário, classifica e então transforma em texto. Na seleção da forma de concateção existem duas opções, estas que basicamente representam a forma como a biblioteca traduz os gestos para textos:
+
+        <ul>
+            <li>Exclusiva: Cada um dos frames capturados é convertido imediatamente para um texto;</li>
+            <li>Continua: Um conjunto de frames são capturados e então a média do resultado da classificação deste conjunto é utilizada para definir o gesto que deve ser representado em texto.</li>
+        </ul>
     </p>
 
     <h8>Forma de concatenação do texto</h8>
