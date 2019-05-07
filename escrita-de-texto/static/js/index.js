@@ -21,7 +21,7 @@
         // verifica qual formato de concatenação e insere a predição
         if (selectConcat === "Exclusiva") {
             textArea.value = gesture;
-        } else if (selectConcat === "Continua") {
+        } else if (selectConcat === "Contínua") {
             textArea.value += `${gesture} `;
         }        
     });
